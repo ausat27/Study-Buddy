@@ -66,6 +66,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow: hidden;
+  /* Prevent document scroll */
+  overscroll-behavior-y: none;
+  /* Prevent rubber-banding */
 }
 
 /* Utilities */
@@ -116,16 +119,5 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   appearance: textfield;
-  -moz-appearance: textfield;
-}
-
-/* Hide Number Input Spinners */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
   -moz-appearance: textfield;
 }

@@ -15,7 +15,7 @@ export default function Home() {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <div className="h-screen w-full bg-background flex flex-col overflow-hidden">
+    <div className="h-[100dvh] w-full bg-background flex flex-col overflow-hidden">
 
       {/* Main Workspace Area - Added top padding for mobile to clear the menu button */}
       <div className="flex-1 flex overflow-hidden relative gap-6 p-4 pb-4 pt-20 md:pt-4">
