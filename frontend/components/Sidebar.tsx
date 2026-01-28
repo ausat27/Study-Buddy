@@ -56,7 +56,7 @@ export default function Sidebar({ activeTab, onTabChange, collapsed, toggleColla
     );
 }
 
-function NavItem({ label, id, activeTab, onClick, icon: Icon, collapsed }: { label: string, id: string, activeTab: string, onClick: (id: string) => void, icon: any, collapsed: boolean }) {
+function NavItem({ label, id, activeTab, onClick, icon: Icon, collapsed }: { label: string, id: string, activeTab: string, onClick: (id: string) => void, icon: React.ElementType, collapsed: boolean }) {
     const active = activeTab === id;
     return (
         <button

@@ -13,7 +13,7 @@ export default function Timer() {
             interval = setInterval(() => {
                 setTimeLeft((prev) => prev - 1);
             }, 1000);
-        } else if (timeLeft === 0) {
+        } else if (timeLeft === 0 && isActive) {
             setIsActive(false);
         }
         return () => { if (interval) clearInterval(interval); };

@@ -328,7 +328,7 @@ export default function WeeklyPlanner() {
                                     <select
                                         className="w-full p-2 rounded-lg border border-border bg-surface outline-none"
                                         value={newEvent.type}
-                                        onChange={e => setNewEvent({ ...newEvent, type: e.target.type as any })}
+                                        onChange={e => setNewEvent({ ...newEvent, type: e.target.value as "study" | "exam" | "deadline" | "break" })}
                                     >
                                         <option value="study">Study</option>
                                         <option value="exam">Exam</option>

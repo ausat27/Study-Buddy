@@ -189,7 +189,7 @@ export default function ChatInterface({ className }: ChatInterfaceProps) {
                             <div className="space-y-2">
                                 <h2 className="text-2xl text-foreground">Ready to learn?</h2>
                                 <p className="text-sm opacity-70 max-w-xs mx-auto font-light">
-                                    I'm set to {selectedMode} mode. Ask me anything.
+                                    I&apos;m set to {selectedMode} mode. Ask me anything.
                                 </p>
                             </div>
                         </div>
